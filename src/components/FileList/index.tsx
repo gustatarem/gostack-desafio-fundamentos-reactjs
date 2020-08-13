@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiFile } from 'react-icons/fi';
 
 import { Container, FileInfo } from './styles';
 
@@ -14,9 +15,10 @@ interface FileListProps {
 const FileList: React.FC<FileListProps> = ({ files }: FileListProps) => {
   return (
     <Container>
-      {files.map((uploadedFile) => (
+      {files.map(uploadedFile => (
         <li key={uploadedFile.name}>
           <FileInfo>
+            <FiFile size={40} />
             <div>
               <strong>{uploadedFile.name}</strong>
               <span>{uploadedFile.readableSize}</span>

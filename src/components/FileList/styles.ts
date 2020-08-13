@@ -18,8 +18,11 @@ export const Container = styled.ul`
 export const FileInfo = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex: 1;
+
+  svg {
+    margin-right: 10px;
+  }
 
   button {
     border: 0;
